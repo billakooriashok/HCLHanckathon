@@ -5,7 +5,7 @@ ENV HOME=/home/app
 
 RUN apt-get update && apt-get install htop
 
-COPY patient-service.js $HOME/node_docker/
+COPY *.js $HOME/node_docker/
 
 WORKDIR $HOME/node_docker
 
